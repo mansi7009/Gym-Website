@@ -1,0 +1,394 @@
+*body{
+    padding: 0%;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0%;
+}
+/* navigation menu */
+.logo img{
+    width:50px;
+    height: 45px;
+    filter: invert(100%);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-weight: bolder;
+    font-size: 1.8rem;
+    color:white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navigation::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url('../img/pic1.jpg');
+    background-repeat:  no-repeat ;
+    background-position: center;
+    background-size:  cover;
+    width: 1349px;
+    height: 50vh;
+    opacity:0.8;
+    z-index: -1;
+    top:-10%;
+    left: -8px;
+    display: block; 
+}
+.navigation ul{
+    display: flex;
+   justify-content: space-between;
+}
+.navigation ul li {
+    text-align: right;
+    margin: 9px;
+    padding:0px 9px;
+    display: inline-block;
+    font-size: 1.2rem;
+    /* text-decoration: none; */
+    list-style: none;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+.navigation ul li a{
+    color: white;    
+    text-decoration: none;
+    list-style-type: none;
+}
+.navigation ul li a::after{
+    content: "";
+   background-color: rgb(233, 110, 110);
+   height:2px;
+   display: block;
+   margin:auto;
+   transition: 0.5s;
+   width:0%;
+}
+.navigation ul li a:hover::after{
+    width:100%;
+}
+.navigation .fa{
+    display: none;    
+}
+@media screen  and (max-width :640px) {
+    .logo{
+        font-size : 1.3rem;
+    }
+    
+    .Nutrition ul li{
+        display: block;
+        position: absolute;
+        background-color: rgb(53, 52, 52);
+        text-align: center;
+        top:200px;
+        z-index: 3;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .navigation .fa{
+        display:
+    }
+    .navigation ul li a{
+        color: black;
+    }
+}
+
+/* -------------------Testimonials--------------------- */
+.testimonials h1{
+    text-align: center;
+    margin: 32px;
+}
+.test_row{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vw; */
+   
+}
+.col{
+    background-color: rgb(252, 232, 232);
+    border: 2px solid rgb(252, 232, 232);
+    border-radius: 9px;
+    display: inline-block;
+    /* position: absolute; */
+    /* justify-content: center;
+    align-items: center; */
+    width: 42%;
+    flex-direction: column;
+    height: 165px;
+    flex-basis: 1;
+    text-align: center;
+    margin:  7px;
+    padding: 3px;
+}
+.test_row img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.col:hover{
+    box-shadow: 0 0 20px 0 rgb(126, 125, 125);
+}
+.col .fas{
+    color:rgb(196, 105, 105);
+    /* border: px solid gold; */
+}
+.col h3{
+    font-weight: 800;
+    margin: 10px;
+}
+.col p {
+    margin: 5px;
+}
+/* ----------Coach--------------- */
+.box img{
+    height: 250px;
+    width: 97%;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.Row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.box{
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    position: relative;
+}
+.coach h1{
+    color: white;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.coach h2{
+    margin-bottom: 20px;
+    margin-top: 140px;
+    font-size: 2.8rem;
+}
+/* .text-hover  */
+.text-hover{
+     border: 2px solid rgb(241, 175, 175);
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    width: 200px;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    position: absolute;
+    /* position: relative; */
+    /* top: 33px; */
+    left:22%;
+    bottom: -15px;
+    cursor: pointer;
+    transition: 2s linear;
+}
+.text-hover h3{
+    margin: 5px;
+}
+.text-hover:hover p{
+    display: block;    
+}
+
+.text-hover:hover{
+    transform: translateY(-30px),scaleY(1.3);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.text-hover p{
+    display: none;
+    text-align:center;
+}
+/* ----------------footer----------------- */
+.footer{
+    /* margin-top: 100px; */
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footer h3{
+    margin-bottom: 9px;
+}
+.icons{
+    margin: 0px 16px;
+    cursor: pointer;
+}
+.fab{
+    color: rgb(233, 110, 110);
+    margin-right: 7px;
+}
+
+ .footer .far{
+     color: rgb(233, 110, 110);
+ }
+
+/* ----------utility classes -----------------*/
+.text-center{
+    text-align: center;
+}
+h1{
+    font-size: 2.8rem;
+    margin: 5px;
+}
+
+
+
+/* ---------------------------------------Contact us Section---------------------------------------------- */
+
+
+.sub-navigation{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.sub-navigation::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url('../img/contact.jpg');
+    background-repeat:  no-repeat ;
+    background-position: center;
+    background-size:  cover;
+    width: 1349px;
+    height:100vh;
+    opacity:0.8;
+    z-index: -1;
+    top:-10%;
+    left: -8px;
+    display: block; 
+}
+.sub-navigation ul{
+    display: flex;
+   justify-content: space-between;
+}
+.sub-navigation ul li {
+    text-align: right;
+    margin: 9px;
+    padding:0px 9px;
+    display: inline-block;
+    font-size: 1.2rem;
+    /* text-decoration: none; */
+    list-style: none;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+.sub-navigation ul li a{
+    color: white;    
+    text-decoration: none;
+    list-style-type: none;
+}
+.sub-navigation ul li a::after{
+    content: "";
+   background-color: rgb(233, 110, 110);
+   height:2px;
+   display: block;
+   margin:auto;
+   transition: 0.5s;
+   width:0%;
+}
+.sub-navigation ul li a:hover::after{
+    width:100%;
+}
+.sub-navigation .fa{
+    display: none;    
+}
+
+
+/* ----------Contact form------------- */
+
+.Contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 98%;
+}
+.container h3 {
+    text-align: center;
+    color: white;
+    margin-top: 12%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.9rem;
+}
+
+.form-group input {
+    display: block;
+    width: 270px;
+    outline: none;
+    margin: 6px auto;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px 4px;
+    border: 2px solid black;
+    border-radius: 9px;
+}
+.header {
+    background-color: black;
+    margin: -20px;
+    position: sticky;
+    top: 0px;
+}
+/* .container button {
+   
+    border: 2px solid transparent;
+} */
+label{
+    font-weight: bold;
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+}
+
+
+.btn{
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: medium;
+     display: block;
+    width: 222px;
+    margin: 10px auto;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 9px;
+    
+}
+.btn:hover{
+    background-color: rgb(233, 110, 110);
+    color:white;
+    border:2px solid rgb(233, 110, 110);
+    transition: 0.5s;
+}
+.spacing{
+    margin-top: 150px;
+}
+@media screen and (max-width : 480px ) {
+    .container h3{
+        font-size: 1.5rem;
+        margin-top: 26%;
+    }
+    .sub-navigation::before{
+        height: 130vh;
+    }
+}

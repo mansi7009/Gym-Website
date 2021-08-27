@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In Page</title>
+    <style>
+        *body {
+            position: relative;
+        }
+
+        .container {
+            border: 2px solid black;
+            display: flex;
+            width: 360px; 
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+
+        input {
+            border: 2px solid black;
+            border-radius: 8px;
+            text-align: center;
+            margin: 5px;
+            padding: 3px;
+        }
+        .btn {
+            width: 258px;
+            border: 2px solid black;
+            border-radius: 8px;
+            margin: 11px;
+            padding: 9px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="noaction.php">
+            <div>
+                <label for="Name">Name   :</label>
+                <input type="text" name="Name" id="Name" placeholder="Enter your name ">
+            </div>
+            <div>
+                <label for="Age">Age       :</label>
+                <input type="number" name="Age" id="Age" placeholder="Enter your age ">
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" placeholder="Enter your e-mail ">
+            </div>
+            <div>
+                <label for="Phone">Phone :</label>
+                <input type="phone" name="Phone" id="Phone" placeholder="Enter your Phone Number ">
+            </div>
+            <div>
+                <label for="Gender">Gender  :</label>
+                <input type="text" name="Gender" id="Gender" placeholder="Enter your Gender ">
+            </div>
+            <div>
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
