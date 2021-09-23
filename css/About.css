@@ -2,6 +2,7 @@
     padding: 0%;
     color: white;
     box-sizing: border-box;
+    overflow: hidden;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0%;
 }
@@ -41,13 +42,15 @@
     height: 50vh;
     opacity:0.8;
     z-index: -1;
-    top:-10%;
+    top: -16%;
     left: -8px;
     display: block; 
 }
 .navigation ul{
     display: flex;
    justify-content: space-between;
+   margin: 0%;
+
 }
 .navigation ul li {
     text-align: right;
@@ -95,9 +98,9 @@
     h1{
         font-size: 20px;
     }
-    .navigation .fa{
+    /* .navigation .fa{
         display:
-    }
+    } */
     .navigation ul li a{
         color: black;
     }
@@ -176,7 +179,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .coach h2{
     margin-bottom: 20px;
@@ -280,6 +282,7 @@ h1{
 }
 .sub-navigation ul{
     display: flex;
+    margin: 0%;
    justify-content: space-between;
 }
 .sub-navigation ul li {
@@ -390,5 +393,26 @@ label{
     }
     .sub-navigation::before{
         height: 130vh;
+    }
+    .Row{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .test_row{
+        flex-direction: column;  
+        flex-wrap: wrap; 
+        margin: 12px;
+    }
+    .col{
+        height: 51%;
+        width: 100%;
+        margin: 7px;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .sub-navigation::before{
+        top: -16%;
+
     }
 }

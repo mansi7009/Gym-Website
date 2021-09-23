@@ -1,9 +1,9 @@
 *body{
-    padding: 0;
+    padding: 0%;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
-    margin: 0;
+    margin: 0%;
     overflow: hidden;
 }
 /* navigation menu */
@@ -48,6 +48,7 @@
 
 .navigation ul{
     display: flex;
+    margin: 0%;
    justify-content: space-between;
 }
 .navigation ul li {

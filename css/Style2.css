@@ -45,12 +45,16 @@
     left: -2%;
     display: block; 
 }
+
 .navigation ul{
     display: flex;
-    /* flex-wrap: wrap; */
+    /* flex-wrap : wrap; */
+    margin: 0%;
    justify-content: space-between;
 }
+
 .navigation ul li {
+    
     text-align: right;
     margin: 9px;
     padding:0px 9px;
